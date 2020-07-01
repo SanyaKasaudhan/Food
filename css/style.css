@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* nav logo and image */
+#logo{
+    margin: 10px 45px;
+}
+#logo img{
+margin: 3px 6px;
+height: 45px;
+width: 45px;
+
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center ;
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3em;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+/*Home section*/
