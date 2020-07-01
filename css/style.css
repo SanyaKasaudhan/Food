@@ -45,6 +45,60 @@ width: 45px;
 }
 #navbar ul li a:hover{
     color:black;
-    background-color: white;
+    background-color: palevioletred;
 }
 /*Home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+#home::before{
+    content: "";
+    background:url('../img/bg1.jpeg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#home h1{
+    color: black;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*Services section*/
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+border: 2px solid burlywood;
+}
+#services .img{
+
+}
+/*utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secpndary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    color: antiquewhite;
+    background-color: rgb(160, 38, 123);
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 17px;
+}
