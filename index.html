@@ -31,9 +31,9 @@
     <section class="services-container">
         <h1 class="h-primary center">Our Services</h1>
         <div id="services">
-            <div class="row" style=" margin-left: 43px;
+            <div class="row" style=" margin-left: 73px;
             margin-right: 43px; ">
-                <div class="column">
+                <div class="column" id="rcorners2">
                   <img src="img/berry.jpg" alt="blueberry" style="width:100%">
                   <h6 class="h-secondary center">Blueberries</h6>
                 <p class="center">Blueberries are sweet, nutritious and wildly popular.
@@ -41,14 +41,14 @@
                     Often labeled a superfood, they are low in calories and incredibly good for you.
                     </p>
                 </div>
-                <div class="column">
+                <div class="column" id="rcorners2">
                   <img src="img/pear.jpg" alt="blueberry" style="width:100%">
                   <h6 class="h-secondary center">Pears</h6>
                   <p class="center">Pears are sweet, nutritious and wildly popular.
                     This food is loved by each generation people.
                 It is rich in vitamin, calcium</p>
                 </div>
-                <div class="column">
+                <div class="column" id="rcorners2">
                   <img src="img/strawberry.jpg" alt="blueberry" style="width:100%">
                   <h6 class="h-secondary center">Strawberries</h6>
                   <p class="center">Strawberries are sweet, nutritious.
@@ -75,15 +75,30 @@
                 <img src="img/webex.jpg" alt="Mountains" style="width:100%">
             </div>
     </section>
-    <section id="contact">
-        <h1 class="h-primary center">Contact us</h1>
-        <div class="contact-box">
-            <form action="">
-                <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" placeholder="enter your name">
-            </div>
-            </form>
+    <section id="contact" style="padding-top: 15px;">
+        
+        <h3>Contact Form</h3>
+
+        <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
         </div>
     </section>
 
